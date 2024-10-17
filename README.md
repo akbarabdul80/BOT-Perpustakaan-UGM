@@ -12,7 +12,7 @@ Selamat datang di **Bot Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk 
   - `python-telegram-bot`
   - Dependensi lainnya (jika ada)
 
-## Petunjuk Pengaturan
+## Petunjuk Penggunaan
 
 ### 1. Kloning Repository
 Untuk memulai, klon repository dengan menggunakan perintah berikut:
@@ -21,7 +21,7 @@ git clone https://github.com/username-anda/ugm-library-seat-booking-bot.git
 cd ugm-library-seat-booking-bot
 ```
 
-### 2. Instal Dependensi
+### 2. Instal Dependency
 Pastikan Anda memiliki `pip` terinstal, lalu jalankan perintah berikut untuk menginstal library yang diperlukan:
 ```bash
 pip install -r requirements.txt
