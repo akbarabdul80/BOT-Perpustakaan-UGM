@@ -1,6 +1,6 @@
-# Bot Pemesanan Kursi Perpustakaan UGM
+# Bot Perpustakaan UGM
 
-Selamat datang di **Bot Pemesanan Kursi Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk dengan mudah memesan kursi di perpustakaan UGM melalui Telegram.
+Selamat datang di **Bot Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk dengan mudah memesan kursi di perpustakaan UGM melalui Telegram.
 
 ## Fitur
 - **Memesan kursi** di perpustakaan UGM.
