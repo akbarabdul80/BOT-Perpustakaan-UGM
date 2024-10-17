@@ -1,57 +1,76 @@
-# UGM Library Seat Booking Bot
+# Bot Pemesanan Kursi Perpustakaan UGM
 
-Welcome to the **UGM Library Seat Booking Bot**! This bot allows users to easily book seats at the UGM library through Telegram.
+Selamat datang di **Bot Pemesanan Kursi Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk dengan mudah memesan kursi di perpustakaan UGM melalui Telegram.
 
-## Features
-- **Reserve seats** in the UGM library.
-- **Check availability** of seats.
+## Fitur
+- **Memesan kursi** di perpustakaan UGM.
+- **Memeriksa ketersediaan** kursi.
 
-## Requirements
+## Prasyarat
 - Python 3.x
-- Libraries:
+- Library:
   - `python-telegram-bot`
-  - Other dependencies (if any)
+  - Dependensi lainnya (jika ada)
 
-## Setup Instructions
+## Petunjuk Pengaturan
 
-### 1. Clone the Repository
-To get started, clone the repository using the following command:
+### 1. Kloning Repository
+Untuk memulai, klon repository dengan menggunakan perintah berikut:
 ```bash
-git clone https://github.com/your-username/ugm-library-seat-booking-bot.git
+git clone https://github.com/username-anda/ugm-library-seat-booking-bot.git
 cd ugm-library-seat-booking-bot
 ```
 
-### 2. Install Dependencies
-Make sure you have `pip` installed, then run the following command to install the necessary libraries:
+### 2. Instal Dependensi
+Pastikan Anda memiliki `pip` terinstal, lalu jalankan perintah berikut untuk menginstal library yang diperlukan:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configuration
-Before running the bot, you'll need to set your Telegram bot token and other configuration variables.
+### 3. Menangkap `SESSION_ID` dan `GROUP_MENU` dengan Proxyman
+`SESSION_ID` dan `GROUP_MENU` berfungsi untuk otentikasi bot saat mengambil data kursi dan melakukan reservasi. Untuk menangkap `SESSION_ID` dan `GROUP_MENU`, ikuti langkah-langkah berikut:
 
-Open the `config.py` file (or wherever you have your configuration) and modify the following variables:
+1. **Instal Proxyman**:
+   - Buka Proxyman dan konfigurasikan pengaturan proxy.
+   - Aktifkan SSL Proxying dan tambahkan aturan untuk domain `*.ugm.ac.id`.
+
+2. **Instal Sertifikat Proxyman**:
+   - Instal sertifikat Proxyman di sistem Anda.
+
+3. **Mulai Menangkap Lalu Lintas**:
+   - Buka aplikasi UGM Simaster dan buka salah satu menu (contoh Perpustakaan).
+
+4. **Analisis Permintaan**:
+   - Di Proxyman, cari permintaan terkait yang mirip dengan contoh URL berikut:
+     ```
+     https://simaster.ugm.ac.id/services/simaster/ongoing?sesId=xxxx-xxxx=&groupMenu=yyyy-yyyy=&menu=999
+     ```
+   - Dari URL tersebut, Anda dapat mengambil nilai `sesId` dan `groupMenu` sebagai berikut:
+     - `SESSION_ID`: `xxxx-xxxx`
+     - `GROUP_MENU`: `yyyy-yyyy`
+
+### 4. Konfigurasi
+Sebelum menjalankan bot, Anda perlu mengatur token bot Telegram dan variabel konfigurasi lainnya.
+
+Buka file `config.py` (atau file konfigurasi yang Anda gunakan) dan ubah variabel berikut:
 ```python
-TELEGRAM_TOKEN = '{YOUR_TELEGRAM_BOT_TOKEN}'  # Replace with your Telegram Bot Token
-SESSION_ID = "{YOUR_SESSION_ID}"                # Replace with your simaster session ID
-GROUP_MENU = "{GROUP_MENU}"                      # Replace with your simaster group menu ID
+TELEGRAM_TOKEN = '{YOUR_TELEGRAM_BOT_TOKEN}'  # Ganti dengan Token Bot Telegram Anda
+SESSION_ID = "{YOUR_SESSION_ID}"                # Ganti dengan Session ID Anda
+GROUP_MENU = "{GROUP_MENU}"                      # Ganti dengan Group Menu ID Anda
 ```
 
-### 4. Run the Bot
-After setting up your configuration, you can run the bot using the following command:
+### 5. Jalankan Bot
+Setelah mengatur konfigurasi, Anda dapat menjalankan bot menggunakan perintah berikut:
 ```bash
 python bot.py
 ```
 
-### 5. Usage
-- Start the bot in Telegram by searching for its username and clicking 'Start'.
-- Follow the prompts to book a seat at the UGM library.
+### 6. Penggunaan
+- Mulai bot di Telegram dengan mencari nama pengguna dan klik 'Start'.
+- Ikuti petunjuk untuk memesan kursi di perpustakaan UGM.
 
-## Contributing
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+## Kontribusi
+Kontribusi sangat diterima! Jika Anda memiliki saran atau perbaikan, silakan buka isu atau kirim permintaan tarik (pull request).
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-If you have any questions or feedback, feel free to reach out at [your-email@example.com].
+## Lisensi
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detailnya.
