@@ -70,7 +70,7 @@ python bot.py
 - Ikuti petunjuk untuk memesan kursi di perpustakaan UGM.
 
 ## Kontribusi
-Kontribusi sangat diterima! Jika Anda memiliki saran atau perbaikan, silakan buka isu atau kirim permintaan tarik (pull request).
+Kontribusi sangat diterima! Jika Anda memiliki saran atau perbaikan, silakan buka isu atau kirim pull request.
 
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detailnya.
