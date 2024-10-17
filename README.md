@@ -33,8 +33,8 @@ Before running the bot, you'll need to set your Telegram bot token and other con
 Open the `config.py` file (or wherever you have your configuration) and modify the following variables:
 ```python
 TELEGRAM_TOKEN = '{YOUR_TELEGRAM_BOT_TOKEN}'  # Replace with your Telegram Bot Token
-SESSION_ID = "{YOUR_SESSION_ID}"                # Replace with your session ID
-GROUP_MENU = "{GROUP_MENU}"                      # Replace with your group menu ID
+SESSION_ID = "{YOUR_SESSION_ID}"                # Replace with your simaster session ID
+GROUP_MENU = "{GROUP_MENU}"                      # Replace with your simaster group menu ID
 ```
 
 ### 4. Run the Bot
