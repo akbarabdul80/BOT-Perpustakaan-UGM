@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ### 4. Konfigurasi
 Sebelum menjalankan bot, Anda perlu mengatur token bot Telegram dan variabel konfigurasi lainnya.
 
-Buka file `bot.py` dan ubah variabel berikut:
+Buka file `main.py` dan ubah variabel berikut:
 ```python
 TELEGRAM_TOKEN = '{YOUR_TELEGRAM_BOT_TOKEN}'  # Ganti dengan Token Bot Telegram Anda
 SESSION_ID = "{YOUR_SESSION_ID}"                # Ganti dengan Session ID Anda
@@ -62,7 +62,7 @@ GROUP_MENU = "{GROUP_MENU}"                      # Ganti dengan Group Menu ID An
 ### 5. Jalankan Bot
 Setelah mengatur konfigurasi, Anda dapat menjalankan bot menggunakan perintah berikut:
 ```bash
-python bot.py
+python main.py
 ```
 
 ### 6. Penggunaan
