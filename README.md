@@ -17,8 +17,8 @@ Selamat datang di **Bot Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk 
 ### 1. Cloning Repository
 Untuk memulai, clone repository dengan menggunakan perintah berikut:
 ```bash
-git clone https://github.com/username-anda/ugm-library-seat-booking-bot.git
-cd ugm-library-seat-booking-bot
+git clone https://github.com/akbarabdul80/BOT-Perpustakaan-UGM
+cd BOT-Perpustakaan-UGM
 ```
 
 ### 2. Instal Dependency
