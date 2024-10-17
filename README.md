@@ -6,7 +6,7 @@ Selamat datang di **Bot Perpustakaan UGM**! Bot ini memungkinkan pengguna untuk 
 - **Memesan kursi** di perpustakaan UGM.
 - **Memeriksa ketersediaan** kursi.
 
-## Prasyarat
+## Tech
 - Python 3.x
 - Library:
   - `python-telegram-bot`
